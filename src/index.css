@@ -1,0 +1,27 @@
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} 
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#message{
+display:none;
+background: #f1f1f1;
+color: #000;
+position: relative;
+padding: 20px;
+margin-top: 10px;
+}
+.loginDiv{
+  opacity: 0.5;
+}
+.loginDiv:hover {
+opacity: 1.0;
+}

@@ -1,0 +1,114 @@
+/* FRAMER MOTION PROGRESS BAR */
+.prog-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  transform-origin: left;
+  z-index: 1031; 
+}
+
+/* WEBSITE HOME PAGE */
+.navbar-home {
+  padding-bottom: 50px;
+  z-index: 1030;
+}
+
+.election-homepage {
+  height: fit-content;
+  background-color: #e7f8ed;
+  padding: 20px;
+  text-align: center;
+}
+
+.election-homepage-text {
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .election-homepage-text {
+    font-size: 1.5rem;
+  }
+
+  .navbar-home {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .election-homepage-text {
+    font-size: 1.2rem;
+  }
+
+  .navbar-home {
+    height: auto;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.temp1{
+  height: 600px;
+  background-color: yellow;
+}
+.temp2{
+  height: 600px;
+  background-color: black;
+}
+
+.main{
+    background-color: #191919;
+    padding: auto;
+    margin: auto;
+}
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.candidate-photo {
+    width: 100%;
+    height: auto; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+}
+.card.selected {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 100px rgba(0, 123, 255, 0.5);
+  }
+.text{
+    color: #ECDBBA;
+}
+
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .chart-container {
+    margin: 20px;
+    width: 400px;
+  }
+  
+  .chart-container canvas {
+    width: 100%;
+    height: 200px;
+  }
+  .crop-container {
+    position: relative; /* Add this line */
+    height: 400px; /* or any other height you prefer */
+  }
+  
+  .zoom-range {
+    position: absolute; /* Add this line */
+    bottom: 0; /* Add this line */
+    left: 0; /* Add this line */
+    width: auto; /* Add this line */
+  }
+  
