@@ -493,6 +493,7 @@ app.patch('/submit/vote/:electionId/:voterId', verifyVoterToken, async (req, res
     if (!election) {
       return res.status(404).send('Election not found');
     }
+    console.log('foundd')
     const admin = await Admin.findOne({ 'elections._id': electionId });
     if (!admin) {
       return res.status(404).send('Admin not found');
@@ -522,11 +523,7 @@ app.patch('/submit/vote/:electionId/:voterId', verifyVoterToken, async (req, res
 
         admin.elections.forEach(election => {
           if (election._id === electionId) {
-            election.candidates.get(position).forEach(candidate => {
-              console.log(candidate)
-            });
-
-            admin.markModified(`elections.${electionId}.candidates.${position}`);
+            election.candidates.set(position, candidatesAtPosition);
           }
         });
       } else {
@@ -548,6 +545,7 @@ app.patch('/submit/vote/:electionId/:voterId', verifyVoterToken, async (req, res
     // Save the election with updated candidates and voter status
     await election.save();
     await admin.save();
+    console.log('doneee')
     res.status(200).send('Vote submitted successfully');
   } catch (error) {
     console.error('Error submitting vote:', error);

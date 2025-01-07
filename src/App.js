@@ -8,6 +8,7 @@ import Dash from './components/Dash';
 import Election from './components/Election';
 import AdminSignUp from './components/AdminSignUp';
 import NotFound from './components/NotFound';
+import WebcamComponent from './components/dummy';
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
       <Route path="dash/:email/:electionId" element={<Dash/>} />
       <Route path="election/:email" element={<Election/>} />
       <Route path="adminSignUp" element={<AdminSignUp/>} />
+      <Route path='dummy' element={<WebcamComponent/>}/>
       <Route path="*" element={<NotFound />} />
   </Routes>
   </Router>

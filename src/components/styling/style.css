@@ -10,9 +10,10 @@
 }
 
 /* WEBSITE HOME PAGE */
-.navbar-home {
-  padding-bottom: 50px;
-  z-index: 1030;
+button.navBar-admin-login.btn {
+  border-radius: 20px;
+  padding: 0.7rem 1.4rem;
+  margin-left: 20px;
 }
 
 .election-homepage {
@@ -26,7 +27,7 @@
   color: black;
   font-size: 4rem;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 @media (max-width: 768px) {

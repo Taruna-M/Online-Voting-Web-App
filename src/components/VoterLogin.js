@@ -21,7 +21,7 @@ function VoterLogin(){
                         sessionStorage.setItem('voterToken', token);
                         sessionStorage.setItem('voterID',voterId);
                         alert('Welcome VOTER');
-                        navigate(`/voter/${electionId}/${voterId}`)
+                        navigate(`/voter/${electionId}/${voterId}`) //add voter status also to check 
                         
                     }
                     // eslint-disable-next-line
